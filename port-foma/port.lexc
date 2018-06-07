@@ -1,0 +1,92 @@
+Multichar_Symbols 
+ +Ger +Ind.Pr +Ind.Imp +Ind.Fut +Kond +Pret
+ +1SG +2SG +3SG +1PL +3PL
+
+LEXICON Root
+ falar:fal ArVerb;
+ comer:com ErVerb;
+ partir:part IrVerb;
+
+LEXICON ArVerb
++Ind.Pr: 1SG;
++Ind.Pr:a Person;
+:a Common;
++Pret:e 1SGPret;
++Pret:a^ Pret;
++Ind.Imp:a^va AllPersons;
+
+LEXICON ErVerb
++Ind.Pr: 1SG;
++Ind.Pr:e Person;
+:e Common;
++Pret: 1SGPret;
++Pret:e Pret;
++Ind.Imp: IndImp;
+
+LEXICON IrVerb
++Ind.Pr: 1SG;
++Ind.Pr:e Person;
+:i Common;
++Pret: 1SGPret;
++Pret:i Pret;
++Ind.Imp: IndImp;
+
+LEXICON Common
+: Gerund;
+:r Kond;
+:r IndFut;
++Ind.Pr: 1PL;
+
+LEXICON Gerund
++Ger:ndo #;
+
+LEXICON Kond
++Kond: IndImp;
+
+LEXICON IndFut
++Ind.Fut: PersonFut;
+
+LEXICON IndImp
+:i^a AllPersons;
+
+LEXICON Pret
++2SG:ste #;
++3SG:u #;
++1PL:mos #;
++3PL:ram #;
+
+LEXICON PersonFut
++1SG:ei #;
++2SG:ás #;
++3SG:á #;
++1PL:emos #;
++3PL:ão #;
+
+LEXICON Person
+ 2SG;
+ 3SG;
+ 3PL;
+
+LEXICON AllPersons
+ Person;
++1SG: #;
+ 1PL;
+
+LEXICON 1SG
++1SG:o #;
+
+LEXICON 2SG
++2SG:s #;
+
+LEXICON 3SG
++3SG: #;
+
+LEXICON 1PL
++1PL:mos #;
+
+LEXICON 3PL
++3PL:m #;
+
+LEXICON 1SGPret
++1SG:i #;
+

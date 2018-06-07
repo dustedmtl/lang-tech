@@ -1,0 +1,11 @@
+read lexc port.lexc
+define Lexicon;
+
+define IWeighted i -> í || _ "^" [a m o s] .#. ;
+define AWeighted a -> á || _ "^" [v a m o s] .#. ;
+define APreterite1PL a -> á || _ "^" [m o s] .#. ;
+define APreterite3SG a -> o || _ "^" [u] .#. ;
+define Cleanup "^" -> 0;
+
+regex Lexicon .o. IWeighted .o. AWeighted .o. APreterite1PL .o. APreterite3SG .o. Cleanup ;
+
